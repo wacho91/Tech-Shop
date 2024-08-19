@@ -1,5 +1,6 @@
 import { FaCartShopping } from "react-icons/fa6"
 import { IoMdSearch } from "react-icons/io"
+import DarkMode from "./DarkMode"
 
 
 const MenuLinks = [
@@ -39,7 +40,7 @@ const NavBar = () => {
                         className="text-primary font-semibold tracking-widest text-2xl uppercase sm:text-3xl"
                         href="#"
                     >
-                        Tech-Shop
+                        T-Shop
                     </a>
                     {/*Menu Items*/}
                     <div className="hidden lg:block">
@@ -81,6 +82,9 @@ const NavBar = () => {
                         </div>
                     </button>
                     {/*Dark Mode Section*/}
+                    <div>
+                        <DarkMode />
+                    </div>
                 </div>
             </div>
         </div>
