@@ -58,7 +58,7 @@ const NavBar = () => {
                         className="text-primary font-semibold tracking-widest text-2xl uppercase sm:text-3xl"
                         href="#"
                     >
-                        EShop
+                        T-Shop
                     </a>
                     {/*Menu Items*/}
                     <div className="hidden lg:block">
