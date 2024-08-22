@@ -51,6 +51,7 @@ const Products = () => {
         <Heading title="Our Products" subtitle={"Explore Our Products"} />
         {/*Body Section*/}
         <ProductCard  data={ProductsData} />
+        <ProductCard  data={ProductsData} />
       </div>
     </div>
   )
