@@ -13,6 +13,9 @@ import Partners from "./components/Partners/Partners"
 import Footer from "./components/Footer/Footer"
 import Fopup from "./components/Fopup/Fopup"
 import { useState } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react"
 
 const BannerData = {
   discount: "30% OFF",
@@ -38,11 +41,21 @@ const BannerData2 = {
 
 function App() {
 
-  const [orderPopup, setOrderPopup] = useState(true)
+  const [orderPopup, setOrderPopup] = useState(false)
 
   const handleOrderPopup = () => {
     setOrderPopup(!orderPopup);
   }
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-sine",
+      delay: 100,
+      offset: 100
+    })
+    AOS.refresh()
+  },[])
 
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">

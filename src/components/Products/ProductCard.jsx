@@ -11,12 +11,12 @@ const ProductCard = ({data}) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 place-items-center">
           {/*Card Section*/}
           {data.map((item, index) => (
-              <div className="group" key={index}>
+              <div data-aos="fade-up" data-aos-delay={data.aosDelay} className="group" key={index}>
                     <div className="relative">
                         <img 
-                           src={item.img} 
-                           alt="" 
-                           className="h-[180px] w-[260px] object-cover rounded-md"
+                          src={item.img} 
+                          alt="" 
+                          className="h-[180px] w-[260px] object-cover rounded-md"
                         />
                         {/*Hover Button*/}
                         <div className="hidden group-hover:flex absolute top-1/2 -translate-y-1/2 left-1/2 

@@ -11,7 +11,8 @@ const BlogData = [
         title: "How to choose perfect smartwatch",
         subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, doloremque.",
         published: "Aug 21 2024 by Dishlad",
-        image: Img1
+        image: Img1,
+        aosDelay: "0"
     },
 
     {
@@ -19,7 +20,8 @@ const BlogData = [
         title: "How to choose perfect gadget",
         subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, doloremque",
         published: "Aug 21 2024 by Satya",
-        image: Img2
+        image: Img2,
+        aosDelay: "200"
     },
 
     {
@@ -27,7 +29,8 @@ const BlogData = [
         title: "How to choose perfect VR headset",
         subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, doloremque",
         published: "Aug 21 2024 by Sahir",
-        image: Img3
+        image: Img3,
+        aosDelay: "400"
     }
 ]
 
@@ -43,7 +46,7 @@ const Blog = () => {
             {/*Blog Card*/}
             {
                 BlogData.map((data) => (
-                    <div key={data.id} className="bg-white dark:bg-gray-900">
+                    <div data-aos="fade-up" data-aos-delay={data.aosDelay} key={data.id} className="bg-white dark:bg-gray-900">
                         <div>
                             {/*Image Section*/}
                             <div className="overflow-hidden rounded-2xl mb-2">
